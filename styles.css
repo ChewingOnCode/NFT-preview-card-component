@@ -1,1 +1,134 @@
-/*# sourceMappingURL=styles.css.map */
+:root {
+  --softBlue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  --VeryDarkBlue: hsl(217, 54%, 11%); /*(main BG)*/
+  --semiDarkBlue: hsl(216, 50%, 16%); /*(card BG)*/
+  --somewhatDarkBlue: hsl(215, 32%, 27%); /*line)*/
+  --White: hsl(0, 0%, 100%);
+
+  --Shadow1: hsla(217, 54%, 51%);
+  --Shadow2: hsla(217, 54%, 11%, 0.7);
+
+  /* Font */
+  --Outfit: "Outfit", sans-serif;
+
+  /* Font Size */
+  --paragraph: 18px;
+
+  /* Font Weight */
+  --Light: 300;
+  --Normal: 400;
+  --SemiBold: 600;
+}
+
+body {
+  background-color: var(--VeryDarkBlue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Outfit", sans-serif;
+}
+.card {
+  background-color: var(--semiDarkBlue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  width: 300px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin-bottom: 20px;
+}
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+h2 {
+  color: hsl(0, 0%, 100%);
+}
+p {
+  color: var(--softBlue);
+  font-weight: 300;
+  font-size: var(--paragraph);
+}
+.cardPrice {
+  display: flex;
+  justify-content: space-between;
+}
+.left {
+  display: flex;
+  width: 50%;
+  align-items: center;
+}
+
+.ethIcon {
+  margin-right: 5px;
+  width: 12px;
+  height: auto;
+}
+
+.timeIcon {
+  height: auto;
+  width: 13px;
+  margin-right: 5px;
+}
+.left span {
+  color: var(--cyan);
+}
+.right {
+  display: flex;
+  align-items: center;
+}
+.right span {
+  color: var(--softBlue);
+}
+hr {
+  margin-top: 20px;
+  border: 1px solid var(--somewhatDarkBlue);
+}
+.cardFooter {
+  display: flex;
+  align-items: center;
+}
+
+.profileImg {
+  width: 30px;
+  height: auto;
+  border: 3px solid --White;
+  margin-right: 20px;
+  z-index: 1;
+}
+.footerRight {
+  display: flex;
+  font-size: --;
+}
+.footerRight p {
+  color: unset;
+  color: var(--White);
+}
+.footerRight span {
+  color: var(--softBlue);
+}
+
+.attribution {
+  color: var(--White);
+}
+
+.attribution a {
+  color: var(--softBlue);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
